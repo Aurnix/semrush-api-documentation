@@ -1,3 +1,31 @@
+---
+title: Semrush API Documentation — LLM Index
+description: Machine-readable index of the complete Semrush API documentation corpus, organized for retrieval by LLM agents.
+version: 2026.05
+license: see source — Semrush docs are copyrighted by Semrush Inc.
+canonical_source: https://developer.semrush.com/api/
+format: markdown
+delimiter_convention:
+  seo_api: CSV with `;` (semicolon) separator; some endpoints captured with `export_escape=1` use `,` plus quoted columns
+  trends_api: CSV with `,` (comma) separator
+  projects_api: JSON
+  local_api: "JSON (envelope: `{ meta, data | error }`)"
+authentication:
+  api_key_query: SEO API, Projects API (API key), Trends API — pass as `?key=<KEY>`
+  api_key_header: "Listing Management API (current) — pass as `Authorization: Apikey <KEY>`"
+  oauth2_bearer: "Projects API (OAuth 2.0), Map Rank Tracker API, deprecated Listing Management API — pass as `Authorization: Bearer <TOKEN>`"
+base_urls:
+  seo: https://api.semrush.com/
+  trends: https://api.semrush.com/analytics/ta/api/v3/
+  projects_api_key: https://api.semrush.com/management/v1/
+  projects_oauth: https://api.semrush.com/apis/v4/projects/v0/
+  position_tracking: https://api.semrush.com/reports/v1/projects/{ID}/tracking/
+  site_audit: https://api.semrush.com/reports/v1/projects/{ID}/siteaudit/
+  listing_management: https://api.semrush.com/apis/v4/local/v1/
+  map_rank_tracker: https://api.semrush.com/apis/v4/map-rank-tracker/v0/
+file_count: 163
+---
+
 # Semrush API Documentation — LLM Index
 
 > A complete, LLM-ingestible reference for the Semrush API surface: SEO, Trends, Projects (API key + OAuth 2.0), Position Tracking, Site Audit, Listing Management, and Map Rank Tracker. Each link below points to a single endpoint or concept page; descriptions include the pricing model so cost-aware agents can plan requests before fetching.
