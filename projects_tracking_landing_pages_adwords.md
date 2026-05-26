@@ -65,8 +65,6 @@ GET /?key=YOUR_API_KEY&action=report&type=tracking_landing_pages_adwords&date_be
 
 ## Example Response
 
-> The source response example was truncated mid-payload; reproduced here verbatim.
-
 ```json
 {
   "total": 4,
@@ -83,9 +81,30 @@ GET /?key=YOUR_API_KEY&action=report&type=tracking_landing_pages_adwords&date_be
       "Tp": "lost",
       "Dt": {
         "20210518": {
-          "Mc": 1
+          "Mc": 1, "Av": 1, "Tr": 18333.33, "Tc": 30433.33, "Rq": 550000
+        },
+        "20210524": {
+          "Mc": 0, "Av": "-", "Tr": 0, "Tc": 0, "Rq": 0
+        },
+        "Diff": {
+          "Mc": -1, "Av": -11, "Tr": -18333.33, "Tc": -30433.33, "Rq": -550000
         }
-      }
+      },
+      "Kw": [
+        {
+          "Pi": "11540482552829684149",
+          "Ph": "apple music",
+          "Tp": "lost",
+          "Rq": 550000,
+          "Gs": 1,
+          "Tg": {},
+          "Dt": { "20210518": 1, "20210524": "-", "Diff": -11 },
+          "Tr": { "20210518": 18333.33, "20210524": 0, "Diff": -18333.33 },
+          "Tc": { "20210518": 30433.33, "20210524": 0, "Diff": -30433.33 },
+          "Lt": { "20210518": ["adt"], "20210524": [] }
+        }
+      ],
+      "Amp": 0
     }
   }
 }
