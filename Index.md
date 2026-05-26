@@ -9,11 +9,11 @@ delimiter_convention:
   seo_api: CSV with `;` (semicolon) separator; some endpoints captured with `export_escape=1` use `,` plus quoted columns
   trends_api: CSV with `,` (comma) separator
   projects_api: JSON
-  local_api: JSON (envelope: `{ meta, data | error }`)
+  local_api: "JSON (envelope: `{ meta, data | error }`)"
 authentication:
   api_key_query: SEO API, Projects API (API key), Trends API — pass as `?key=<KEY>`
-  api_key_header: Listing Management API (current) — pass as `Authorization: Apikey <KEY>`
-  oauth2_bearer: Projects API (OAuth 2.0), Map Rank Tracker API, deprecated Listing Management API — pass as `Authorization: Bearer <TOKEN>`
+  api_key_header: "Listing Management API (current) — pass as `Authorization: Apikey <KEY>`"
+  oauth2_bearer: "Projects API (OAuth 2.0), Map Rank Tracker API, deprecated Listing Management API — pass as `Authorization: Bearer <TOKEN>`"
 base_urls:
   seo: https://api.semrush.com/
   trends: https://api.semrush.com/analytics/ta/api/v3/
