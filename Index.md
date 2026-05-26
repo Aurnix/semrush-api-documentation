@@ -23,7 +23,7 @@ base_urls:
   site_audit: https://api.semrush.com/reports/v1/projects/{ID}/siteaudit/
   listing_management: https://api.semrush.com/apis/v4/local/v1/
   map_rank_tracker: https://api.semrush.com/apis/v4/map-rank-tracker/v0/
-file_count: 163
+file_count: 164
 ---
 
 # Semrush API Documentation — LLM Index
@@ -46,6 +46,7 @@ file_count: 163
 - [quick_start.md](quick_start.md): Build your first API call — get the key, structure the URL, encode special chars, retrieve and process data.
 - [authorization.md](authorization.md): API key vs. OAuth 2.0; Device Authorization Grant flow (recommended) and Semrush Auth flow; token refresh.
 - [api_unit_balance.md](api_unit_balance.md): How units are consumed, free balance-check endpoints (Standard + Trends), cost optimization, partial responses, the API query log.
+- [pricing.md](pricing.md): Consolidated per-endpoint API-unit cost table for every product (SEO, Trends, Projects, Position Tracking, Site Audit, Listing Management, Map Rank Tracker). Use this to estimate cost before a batch run.
 - [faq.md](faq.md): Common questions — Standard vs. Trends, AI traffic measurement, unit consumption models, UI vs. API discrepancies.
 - [troubleshooting.md](troubleshooting.md): Why API data may differ from the Semrush UI; common error scenarios.
 
